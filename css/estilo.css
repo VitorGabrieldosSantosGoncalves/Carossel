@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.corpo {
+	background-image: url(https://cdn.leroymerlin.com.br/products/papel_de_parede_adesivo_cubos_coloridos_fundo_branco_n06100_r_1567037751_0ee4_600x600.jpeg);
+	animation: baixo 17s linear infinite;
+}
+.titulo {
+	text-align: center;
+	font-size: 90px;
+	font-family: 'Birthstone', ComicSans;
+}
+
+.carrossel{
+	width: 400px;
+	height: 300px;
+	/*outline: 5px solid red  ;*/
+	overflow: hidden;
+	margin: 50px auto;
+	box-shadow: 10px 10px 30px rgba(231, 30, 30, 0.884);
+}
+
+.carrossel ul {
+	list-style: none;
+	width: 1600px;
+	height: 300px;
+	display: flex;
+}
+
+.carrossel li {
+	position: relative;
+	animation: deslize 20s infinite ease-out;
+}
+
+@keyframes deslize {
+	0% { left: 0; }
+		20% { left: 0; }
+	25% { left: -400px; }
+		45% { left: -400px; }
+	50% { left: -800px; }
+		70% { left: -800px; }
+	75% { left: -1200px; }
+		95% { left: -1200px; }
+	100% { left: 0px; }
+}
+
+@keyframes baixo {
+	to{
+		background-position: -200%;
+	}
+}
